@@ -29,8 +29,9 @@ Mission
 
 @Operator
 
-There are 2 options for running the bot. The easiest and lowest risk way of accomplishing the above is to offload inventory at a different exchange, aka arbitrage. The only downside to this is it requires more capital since you will need balances in multiple accounts. The other alternative is to settle everything on the proof exchange. 
-To do arbitrage, you’ll need a (in this case Binance) account with sufficient balance. Sufficient would be roughly the equivalent size as the trading account on the proof exchange. To turn off arbitrage, simply set the self.arbitrage setting in the __init__ of the bot file to ‘OFF’. With arbitrage ‘OFF’, it will try to settle everything on the proof exchange. This carries a little more risk and we won’t know how it will perform until we actually run it live.
+- There are 2 options for running the bot. The easiest and lowest risk way of accomplishing the above is to offload inventory at a different exchange, aka arbitrage. The only downside to this is it requires more capital since you will need balances in multiple accounts. The other alternative is to settle everything on the proof exchange. 
+- To do arbitrage, you’ll need a (in this case Binance) account with sufficient balance. Sufficient would be roughly the equivalent size as the trading account on the proof exchange. 
+- To turn off arbitrage, simply set the self.arbitrage setting in the __init__ of the bot file to ‘OFF’. With arbitrage ‘OFF’. This carries a little more risk and we won’t know how it will perform until we actually run it live.
 
 Description:
 
