@@ -1,4 +1,4 @@
-# marketmaking
+# Proof Marketmaking
 
 BOT README
 
