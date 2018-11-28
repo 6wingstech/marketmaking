@@ -2,6 +2,8 @@
 
 BOT README
 
+- current status: runs but isn't connected to trading. about 40% complete
+
 How to run:
 
 	python
