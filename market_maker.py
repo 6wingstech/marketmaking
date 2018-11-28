@@ -44,7 +44,7 @@ class Bot:
         self._data_refresh_interval = 300 # Frequency at which the bot will collect market data to help with calculations. Set 'OFF' to turn off
 
         self._position_size1 = 5 # (ETH) amount to offer/bid
-        self._position_size2 = 22 # (ETH) amount to offer/bid for slower moving bot
+        self._position_size2 = 15 # (ETH) amount to offer/bid for slower moving bot
 
         self.spread_1 = 0.0022
         self.spread_2 = 3 # Spread multipler for the slower bot. This number, times spread_1
@@ -128,11 +128,11 @@ class Bot:
         except:
             pass
 
-        stats_df.Position.astype('float')
-        stats_df.Total_Traded.astype('float')
-        stats_df.Profit.astype('float')
-        stats_df.Volatility.astype('float')
-        stats_df.Commissions.astype('float')
+        stats_df['Position'] = stats_df.Position.astype('float')
+        stats_df['Total_Traded'] = stats_df.Total_Traded.astype('float')
+        stats_df['Profit'] = stats_df.Profit.astype('float')
+        stats_df['Volatility'] = stats_df.Volatility.astype('float')
+        stats_df['Commissions'] = stats_df.Commissions.astype('float')
 
         print()
         print('PAIR STATS')
@@ -226,8 +226,6 @@ class Bot:
                     pass
 
                 # Check orders for fills and update
-
-
                 #stats_df, tokens_df = check_orders(stats_df, tokens_df)
 
                 # Put in orders
